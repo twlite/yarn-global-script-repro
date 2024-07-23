@@ -1,0 +1,16 @@
+{
+  "name": "test-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "packages/**"
+  ],
+  "scripts": {
+    "super:test": "yarn workspaces foreach --all -pt run super:test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "yarn@4.3.1"
+}
